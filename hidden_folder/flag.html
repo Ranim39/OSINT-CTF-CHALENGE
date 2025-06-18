@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valider le flag </title>
+<style>
+     body{ background-color:linen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+              flex-direction: column;  }
+    h1{
+        font-size: 150px;
+    }
+    input{
+        width: 500px;
+        height: 80px;
+    }
+    button{
+              
+        margin-top:40px;
+        width: 500px;
+        height: 50px;
+
+    }
+</style>
+</head>
+<body>
+    <h1>Vérifier le Flag</h1>
+    <input type="text" id="FlagInput" placeholder="Entrez le flag ici">
+    <button onclick="checkflag()">Vérifier</button>
+    <div id="result"></div>
+<script>
+function checkflag() {
+    const correctFlag = "FLAG{steganographie réussie}"
+    const userFlag =document.getElementById("FlagInput").value.trim();
+    const resultDiv =document.getElementById("result")
+    
+    if (userFlag==correctFlag){
+        resultDiv.textContent="FELICITATIONS!le flag est correct .";
+        resultDiv.style.color="lightgreen";
+        }
+    else{
+        resultDiv.textContent="Mauvais Flag Réessaie!";
+        resultDiv.style.color="red";
+        }
+    }
+</script>
+</body>
+</html>
