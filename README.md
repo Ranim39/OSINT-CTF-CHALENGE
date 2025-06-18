@@ -23,7 +23,7 @@ Find the real flag hidden inside the image using steganography and validate it t
 
 ## Technologies used
 
-- HTML/CSS  
+- HTML/CSS/JAVASCRIPT
 - Steganography with `steghide` (external tool)  
 
 ---
